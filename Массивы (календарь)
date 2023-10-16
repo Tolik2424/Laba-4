@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    int days_in_month[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+    int day = n;
+    int month = 1;
+
+    while (day > days_in_month[month - 1]) {
+        day -= days_in_month[month - 1];
+        month++;
+    }
+
+    cout << day << " " << month << endl;
+
+    return 0;
+}
