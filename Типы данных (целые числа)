@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+    long long n, m;
+    std::cin >> n >> m;
+
+    // Если количество зайцев больше или равно количеству клеток
+    if (m >= n) {
+        std::cout << m - n + 1 << std::endl;
+    }
+    // Иначе количество зайцев не может превышать количество клеток
+    else {
+        std::cout << 1 << std::endl;
+    }
+
+    return 0;
+}
