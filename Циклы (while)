@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    int N;
+    std::cout << "Введите число N: ";
+    std::cin >> N;
+
+    int i = 1;
+    while (true) {
+        int square = i * i;
+        if (square <= N) {
+            std::cout << square << " ";
+            i++;
+        } else {
+            break;
+        }
+    }
+
+    std::cout << std::endl;
+
+    return 0;
+}
