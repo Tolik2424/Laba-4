@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main() {
+    int a, b;
+    
+    // Вводим два целых числа
+    std::cin >> a >> b;
+    
+    // Сравниваем и находим максимальное
+    int max_number = (a > b) ? a : b;
+    
+    // Выводим результат
+    std::cout << "Наибольшее число: " << max_number << std::endl;
+    
+    return 0;
+}
